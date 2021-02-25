@@ -12,5 +12,5 @@
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 6.5rem;
-   align-content: center;
+   align-content: center; /* alinhar no centro */
 }
