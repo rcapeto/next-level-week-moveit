@@ -1,11 +1,14 @@
 import { ChallengesProvider } from '../context/ChallengeContext';
+import { CountDownProvider } from '../context/CountDownContext';
 import '../styles/global.css';
 
 function MyApp({ Component, pageProps }) {
 
   return (
     <ChallengesProvider>
-      <Component {...pageProps} />
+      <CountDownProvider>
+        <Component {...pageProps} />
+      </CountDownProvider>
     </ChallengesProvider>
   );
 }
